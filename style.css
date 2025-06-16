@@ -1,0 +1,102 @@
+/* ↓ Body Styling ↓ */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: #0d1b2a;
+  color: #e0f7fa;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  text-align: center;
+}
+
+/* ↓ Header Styling ↓ */
+header {
+  background-color: #1b263b;
+  padding: 1rem 0;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+header h1 {
+  margin: 0;
+  color: #8ecae6;
+  font-size: 1.8rem;
+}
+
+/* ↓ Main Layout ↓ */
+main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+/* ↓ Card Styling ↓ */
+.card {
+  background-color: #1b263b;
+  padding: 2rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  max-width: 90%;
+  width: 400px;
+}
+
+/* ↓ Profile Image ↓ */
+.pfp {
+  max-width: 90%;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+/* ↓ Paragraph Styling ↓ */
+p {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  color: #cdb4db;
+}
+
+/* ↓ Buttons Container ↓ */
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* ↓ Button Styling ↓ */
+.btn {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  background-color: #5e60ce;
+  color: white;
+  text-decoration: none;
+  border-radius: 999px;
+  transition: 0.3s ease;
+  box-shadow: 0 0 8px #5e60ceaa;
+}
+
+.btn:hover {
+  box-shadow: 0 0 16px #5e60cecc;
+  transform: scale(1.03);
+}
+
+/* ↓ Special "Boo" Button ↓ */
+.btn.boo {
+  background-color: #7209b7;
+  box-shadow: 0 0 8px #7209b7aa;
+}
+
+.btn.boo:hover {
+  box-shadow: 0 0 16px #f72585cc;
+  background-color: #b5179e;
+}
+
+/* ↓ Footer Styling ↓ */
+footer {
+  background-color: #1b263b;
+  padding: 1rem 0;
+  color: #cdb4db;
+  font-size: 0.9rem;
+  box-shadow: 0 -4px 8px rgba(0,0,0,0.3);
+}
