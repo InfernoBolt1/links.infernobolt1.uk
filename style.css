@@ -1,4 +1,5 @@
 :root {
+  /* Colour palette using CSS variables */
   --clr-bg: #0d1b2a;
   --clr-card: #1b263b;
   --clr-text: #e0f7fa;
@@ -7,7 +8,7 @@
   --clr-footer: #cdb4db;
 }
 
-/* ↓ Body Styling ↓ */
+/* Base Body Styles */
 body {
   margin: 0;
   padding: 0;
@@ -21,7 +22,7 @@ body {
   overflow-x: hidden;
 }
 
-/* ↓ Header Styling ↓ */
+/* Header styles with theme toggle */
 header {
   background-color: var(--clr-card);
   padding: 1rem 0;
@@ -30,11 +31,11 @@ header {
 }
 
 .header-content {
-  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 1rem;
+  position: relative;
 }
 
 #theme-toggle {
@@ -59,7 +60,7 @@ header h1 {
   letter-spacing: 1px;
 }
 
-/* ↓ Main Layout ↓ */
+/* Layout for main content */
 main {
   flex: 1;
   display: flex;
@@ -68,7 +69,7 @@ main {
   padding: 2rem 1rem;
 }
 
-/* ↓ Card Styling ↓ */
+/* Content card styling */
 .card {
   background-color: var(--clr-card);
   padding: 2rem;
@@ -78,7 +79,7 @@ main {
   width: 100%;
 }
 
-/* ↓ Profile Image ↓ */
+/* Profile image styles */
 .pfp {
   max-width: 90%;
   height: auto;
@@ -88,21 +89,21 @@ main {
   box-shadow: 0 0 12px rgba(0,0,0,0.4);
 }
 
-/* ↓ Welcome Heading ↓ */
+/* Welcome text */
 .welcome {
   font-size: 1.4rem;
   margin-bottom: 1.5rem;
   color: var(--clr-footer);
 }
 
-/* ↓ Buttons Container ↓ */
+/* Navigation buttons container */
 .buttons {
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
 
-/* ↓ Button Styling ↓ */
+/* Universal button styling */
 .btn {
   display: inline-flex;
   align-items: center;
@@ -114,8 +115,8 @@ main {
   box-shadow: 0 0 8px var(--clr-accent-shadow);
   font-weight: 600;
   border: none;
-  color: white;              /* NEW: Readable text */
-  text-decoration: none;     /* NEW: Remove underline */
+  color: white;
+  text-decoration: none;
   font-size: 1rem;
 }
 
@@ -124,13 +125,7 @@ main {
   transform: scale(1.05);
 }
 
-.btn img {
-  height: 24px;
-  width: auto;
-  display: block;
-}
-
-/* ↓ Disabled Button ↓ */
+/* Disabled button style */
 .btn.disabled {
   opacity: 0.6;
   cursor: not-allowed;
@@ -139,15 +134,15 @@ main {
   color: white;
 }
 
-/* ↓ Footer Styling ↓ */
+/* Footer styles */
 footer {
   background-color: var(--clr-card);
   padding: 1rem;
   color: var(--clr-footer);
   font-size: 0.95rem;
   box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.3);
-  margin-top: auto;
   text-align: center;
+  margin-top: auto;
 }
 
 .footer-content p {
@@ -164,8 +159,8 @@ footer {
   color: var(--clr-accent);
 }
 
-/* ↓ Responsive ↓ */
-@media (max-width : 519px ){
+/* Responsive tweaks for small devices */
+@media (max-width: 519px) {
   .card {
     padding: 1.5rem;
   }
@@ -180,7 +175,7 @@ footer {
   }
 }
 
-/* ↓ Light Mode Styles ↓ */
+/* Light mode overrides */
 body.light-mode {
   background: radial-gradient(circle at top left, #f0f0f0, #cccccc);
   color: #111;
@@ -196,8 +191,7 @@ body.light-mode footer {
 body.light-mode .btn {
   background-color: #0077cc;
   box-shadow: 0 0 8px rgba(0, 119, 204, 0.4);
-  color: white;              /* NEW: Ensures text is visible in light mode */
-  text-decoration: none;     /* NEW: Prevent underlining here too */
+  color: white;
 }
 
 body.light-mode .btn:hover {
@@ -205,15 +199,15 @@ body.light-mode .btn:hover {
 }
 
 body.light-mode header h1 {
-  color: #222222;
+  color: #222;
 }
 
 body.light-mode .welcome {
-  color: #333333;
+  color: #333;
 }
 
 body.light-mode .footer-content a {
-  color: #222222;
+  color: #222;
 }
 
 body.light-mode .footer-content a:hover {
