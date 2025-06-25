@@ -26,19 +26,17 @@ header {
   background-color: var(--clr-card);
   padding: 1rem 0;
   box-shadow: 0 4px 8px rgba(0,0,0,0.3);
-  position: relative; /* for absolute positioning of icon */
+  position: relative;
 }
 
-/* This container holds header content */
 .header-content {
   position: relative;
   display: flex;
-  justify-content: center; /* Keep <h1> centred */
+  justify-content: center;
   align-items: center;
   gap: 1rem;
 }
 
-/* Theme toggle icon styles - positioned leftmost in header */
 #theme-toggle {
   width: 32px;
   height: 32px;
@@ -116,6 +114,9 @@ main {
   box-shadow: 0 0 8px var(--clr-accent-shadow);
   font-weight: 600;
   border: none;
+  color: white;              /* NEW: Readable text */
+  text-decoration: none;     /* NEW: Remove underline */
+  font-size: 1rem;
 }
 
 .btn:hover {
@@ -195,6 +196,8 @@ body.light-mode footer {
 body.light-mode .btn {
   background-color: #0077cc;
   box-shadow: 0 0 8px rgba(0, 119, 204, 0.4);
+  color: white;              /* NEW: Ensures text is visible in light mode */
+  text-decoration: none;     /* NEW: Prevent underlining here too */
 }
 
 body.light-mode .btn:hover {
@@ -202,15 +205,15 @@ body.light-mode .btn:hover {
 }
 
 body.light-mode header h1 {
-  color: #222222; /* Darker grey/near black for header title */
+  color: #222222;
 }
 
 body.light-mode .welcome {
-  color: #333333; /* Dark grey for welcome message */
+  color: #333333;
 }
 
 body.light-mode .footer-content a {
-  color: #222222; /* Darker colour for email link */
+  color: #222222;
 }
 
 body.light-mode .footer-content a:hover {
